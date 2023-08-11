@@ -174,7 +174,7 @@ color:#F8F9FA;
 .HQ2 span{
     font-size:2.5rem;
     color:#FF9500;
-    background-image: linear-gradient(to right bottom, #ffaa00, #ffb600, #ffc200, #ffce00, #ffda00, #ffcd3b, #ffc258, #ffba70, #ffac9f, #ffafd3, #e3bdf6, #b6ccfe);
+    background-image: linear-gradient(to bottom, #ffaa00, #ffad00, #ffb100, #ffb400, #ffb700);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     /* color:#ffaa00; */
@@ -272,17 +272,17 @@ color:#F8F9FA;
         height:24rem;
     }
     .heroquote2{
-        width:90vw;
+        width:90%;
         margin:0 10%;
         top:7rem;
         left:5rem;
     }
     .HQ1{
-        width:85vw;
+        width:85%;
         font-size:5rem;
     }
     .HQ2{
-        width:70vw;
+        width:70%;
        font-size:1.7rem;
     }
     .HQ2 span{
@@ -380,11 +380,11 @@ color:#F8F9FA;
         right:-24rem;
     }
     .HQ1{
-        width:90vw;
+        width:90%;
         font-size:3.3rem;
     }
     .HQ2{
-        width:80vw;
+        width:90%;
         font-size:1.4rem;
        
     }
@@ -404,6 +404,12 @@ color:#F8F9FA;
     }
     .button2{
         left:3px;
+    }
+
+    @media(max-width:351px){
+        .frontpage{
+            height:95rem;  
+        }
     }
 
 }   
