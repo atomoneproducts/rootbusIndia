@@ -11,7 +11,6 @@
     position: relative;
     width:100%;
     height:68rem;
-    /* height:100%; */
     background:#90e0ef;
     margin: 0;
     overflow: hidden;
@@ -45,12 +44,14 @@ nav{
 }
 
 .logo{
-    width:64px;
-    height:64px;
+    width:60px;
+    height:60px;
    
 }
 
 .logo-letter{
+    position: relative;
+    top:-.2rem;
     color:#0077b6;
     font-family: 'Readex Pro', sans-serif;
     font-size:2rem;
@@ -168,16 +169,17 @@ color:#F8F9FA;
     position:relative;
     top:-.5rem;
     font-size:1.5rem;
-    font-weight:400;  
+    font-weight:500;
+    line-height:3rem;  
 }
 
 .HQ2 span{
     font-size:2.5rem;
+    font-style: italic;
     color:#FF9500;
     background-image: linear-gradient(to bottom, #ffaa00, #ffad00, #ffb100, #ffb400, #ffb700);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    /* color:#ffaa00; */
     font-weight:600;
 }
 #btn{
@@ -229,6 +231,10 @@ color:#F8F9FA;
     .nav{
         width:90%;
         margin:0 5%;
+    }
+    .logo{
+        width:50px;
+        height:50px;
     }
     .frontpage{
         width:100vw;
@@ -282,16 +288,24 @@ color:#F8F9FA;
         font-size:5rem;
     }
     .HQ2{
-        width:70%;
+        width:80%;
        font-size:1.7rem;
     }
     .HQ2 span{
         font-size:2.5rem;
     }
-
+    
     .button2{
         left:0.3rem;
     }
+
+ @media(max-width:1105px){
+    .frontpage{
+        height:78rem;
+    }
+
+ }   
+
 } 
 
 @media (max-width:768px){
@@ -332,7 +346,7 @@ color:#F8F9FA;
 
     .frontpage{
         width:100%;
-        height:90rem;
+        height:85rem;
     }
     .heropage{
        width:100%;
@@ -406,9 +420,14 @@ color:#F8F9FA;
         left:3px;
     }
 
-    @media(max-width:351px){
+    @media(max-width:480px){
         .frontpage{
             height:95rem;  
+        }
+        
+        .HQ2{
+            width:95%;
+            line-height:2.5rem;
         }
     }
 
@@ -416,9 +435,20 @@ color:#F8F9FA;
 
 .content_blog{
     width:100%;
-    height:50rem;
+    height:55rem;
     position: relative;
-    background: #ffffff;
+    background: #fae0e4;
+}
+
+#img4{
+    position: relative;
+    top:8rem;
+    right:10rem;
+    float:right;
+}
+.img4{
+    width:45rem;
+    height:40rem;
 }
 
 
