@@ -476,8 +476,13 @@ color:#F8F9FA;
             transition-timing-function:ease-out;
            
         }
-
+        .slide-nav-link{
+            display: flex;
+            flex-direction: column;
+            align-content: flex-start;
+        }
         .slide-nav-link li{
+            width:100%;
             margin-top: 2rem;
         }
         .slide-nav-link li a{
@@ -500,8 +505,8 @@ color:#F8F9FA;
             position: absolute;
             right:25px;
             top:1.3rem;
-            width:25px;
-            height:25px; 
+            width:21px;
+            height:21px; 
             transform:rotate(90deg);
                
             
@@ -1076,7 +1081,7 @@ color:#F8F9FA;
 
     @media(max-width:400px){
         .content_blog{
-            height:95rem;  
+            height:97rem;  
           }
         .Dim2{
            
