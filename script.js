@@ -45,4 +45,21 @@ window.addEventListener("scroll",()=>
    }
 )
 
+let menu=document.getElementById("menu");
+let slidescreen=document.getElementById("slidescreen")
+let cancel=document.getElementById("cancel-img");
+menu.addEventListener('touchstart',()=>{
+     menu.style.opacity='0';
+     slidescreen.style=`opacity:1;z-index:4;`;
+})
 
+cancel.addEventListener('touchstart',()=>{
+    
+     menu.style.opacity='1';
+     slidescreen.style=`opacity:0;z-index:0;`;
+})
+
+function hide(){
+   slidescreen.style=`opacity:0;z-index:0;`;
+   menu.style.opacity='1';
+}
