@@ -498,11 +498,14 @@ color:#F8F9FA;
             text-transform: uppercase;
             font-family: 'Readex Pro',sans-serif;
             font-size:1.3rem;
+            font-weight:600;
             color:#94d2bd;
             
         }
         .slide-nav-link li a:active{
-          color:rgb(13, 28, 241);
+          
+             color:#ffd60a;
+
         }
 
         .cancel-img{
