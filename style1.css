@@ -477,7 +477,7 @@ color:#F8F9FA;
             height:100vh;
             background: #001d3d;
             transition-property: all;
-            transition-duration: .3s; 
+            transition-duration: 1.3s; 
             transition-timing-function:linear;
            
         }
@@ -518,9 +518,7 @@ color:#F8F9FA;
             position:relative;
             top:-.8rem;
             margin:0;
-            transition-property: all;
-            transition-duration: .2s; 
-            transition-timing-function:linear;   
+            
         }
         
         .HQ2{
