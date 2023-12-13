@@ -1406,6 +1406,9 @@ color:#F8F9FA;
    }
 
    @media(max-width:375px){
+       #nav-logo-cover{
+      width:9.3rem;
+    }
 
     #mate_img{
         width:220px;
