@@ -6,6 +6,11 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: 'lovelo';
+    src: url('/font-familiy/WEB/Lovelo-Black.woff2') format('woff2');
+}
+
 .frontpage{
     position: relative;
     width:100%;
@@ -16,7 +21,7 @@
 }
 
 nav{
-    font-family: 'yellowtail', sans-serif;
+    font-family: 'lovelo', sans-serif;
     max-width:80%;
     height:auto;
     display:flex;
@@ -28,37 +33,39 @@ nav{
 }
 
 .nav-logo{
-    width:30%;
+    width:fit-content;
     height: fit-content;
     flex:1;
 }
 
 #nav-logo-cover{
-    width: 12.5rem;
-    height:4.2rem;
+    width:fit-content;
+    height:4rem;
     display:flex;
     border-radius: 2px;
-    padding:10px;
-    background: #034d9c;
+    padding:15px;
+    /* padding-right: 15px; */
+    /* background: #2286f0; */
 }
 
 .logo,.nav-logo-letter{
     margin:0;
-    font-weight: 100;
+    /* font-weight:100; */
 }
 
 .logo{
-    width:50px;
-    height:50px;
+    width:40px;
+    height:40px;
    
 }
 
 .logo-letter{
     position: relative;
     top:-.6rem;
-    color:#edf6f9;
-    font-size:2.7rem;
-    font-weight: 700;
+    left:9px;
+    color:#ffffff;
+    font-size:2.5rem;
+    font-weight: 500;
     margin-left:-.3rem;
 }
 .nav-link-bar{
@@ -470,8 +477,8 @@ color:#F8F9FA;
         }
        
         .logo-letter{
-            top:-6px;
-            left:.2rem;
+            top:-4px;
+            left:.6rem;
             font-size:2rem;
         }
         .nav-logo,.nav-link-bar{
@@ -1276,7 +1283,6 @@ color:#F8F9FA;
     background:url(team_bgcover.jpg);
     background-position: center;
     background-size: cover;
-    /* background-image: linear-gradient(to left bottom, #a2d2ff, #bbc9ff, #d7c0f6, #efb6e5, #ffafcc); */
 }
 
 #sub_team{
@@ -1477,6 +1483,14 @@ border:1px solid #faf9f9;
 .footer-items span{
 color:#ffffff;
 }
+
+#parent_company{
+    position: absolute;
+    right:0;
+    background: url(parent_logo.jpeg);
+    background-position: center;
+}
+
 @media(max-width:430px){
     .footer-items{
         font-size:.9rem;
