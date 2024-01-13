@@ -66,28 +66,42 @@ nav{
     margin-left:-.3rem;
 }
 .nav-link-bar{
+    width:70%;
+    height: 100%;
     position:relative;
-    top:10px;
+    top:0px;
     font-size: 1.3rem;
     align-self: center;
-    width:65%; 
 }
 
-.nav-links{
+ul.nav-links{
+    height:50px;
     font-family: 'Readex pro',sans-serif;
-    font-size: 1.rem;
-    font-weight: 600;
-    background: #0077b6;
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
+    font-size: 1.4rem;
+    font-weight: 550;
     margin:0;
     display: flex;
-    justify-content: flex-end;
+    
    
 }
 
-.nav-link{
- margin:0 auto;
+li.nav-link{  
+ display:flex;
+ align-items: center;
+ justify-content: center;
+ width:100%;
+ height:100%;
+ margin:0 0;
+}
+
+li.nav-link a{
+text-decoration: none;
+color:rgb(246, 246, 246);
+}
+
+li.nav-link:hover{
+    color:#000;
+    background: #0788ce;
 }
 
 
@@ -262,9 +276,11 @@ color:#F8F9FA;
         width:50px;
         height:50px;
     }
+   
     .logo-letter{
         top:0rem;
     }
+    
     .frontpage{
         width:100vw;
         height:77rem;
@@ -329,8 +345,17 @@ color:#F8F9FA;
     }
 
  @media(max-width:1105px){
+    nav{
+        top:.5rem;
+    }
     .frontpage{
         height:80rem;
+    }
+    .nav-link-bar{
+        top:10px;
+    }
+    li.nav-link{
+        font-size: 1.2rem;
     }
 }  
 
@@ -358,16 +383,25 @@ color:#F8F9FA;
         height:40px;
     
     }
+    .nav-link-bar{
+        top:0px;
+    }
    
     .logo-letter{
         top:-3px;
         font-size:2.3rem;
     }
 
-    #nav-links{
+    ul.nav-links{
+        width:100%;
         position:relative;
-        top:-10px;
+        top:8px;
     }
+
+    li.nav-link{
+        font-size: 1.2rem;
+    }
+
 
     .frontpage{
         width:100%;
@@ -502,7 +536,7 @@ color:#F8F9FA;
             left:-24rem;
         }
 
-        .nav-links{
+        ul.nav-links{
             display:none;
         }
          
@@ -558,7 +592,7 @@ color:#F8F9FA;
         .menu{
             display:block;
             position:relative;
-            top:-.8rem;
+            top:.3rem;
             margin:0;
             transition-property: all;
             transition-duration: .2s; 
@@ -1239,6 +1273,7 @@ color:#F8F9FA;
 #aboutus{
     width:100%;
     height:100%;
+    /* margin-bottom: 5rem; */
     background-image: linear-gradient(to right bottom, #0077b6, #008cc4, #06a1d0, #2ab5db, #48cae4);
     font-family: 'Readex Pro',sans-serif;
     overflow:hidden;
@@ -1267,16 +1302,18 @@ color:#F8F9FA;
    font-size:1.3rem;
    font-weight:700;
    color:#ffffff;
-   margin-bottom:30px;
+   margin-bottom:5rem;
 }
 
 .about-para span{
    font-weight:700;
 
 }
+
 .imgHidden{
     display:none;
 }
+
 #img3{
     width:50%;
     height:100%;
@@ -1290,6 +1327,8 @@ color:#F8F9FA;
 }
 
 #team{
+    position: relative;
+    /* top:6rem; */
     font-family: 'Readex pro';
     width:100%;
     height:37rem;
@@ -1439,7 +1478,7 @@ footer{
     font-family: 'Readex Pro',sans-serif;
     background: #0d1b2a;
     width:100%;
-    height:23rem;
+    height:22rem;
     overflow: hidden;
 }
 .footer-item {
@@ -1496,13 +1535,18 @@ border:1px solid #faf9f9;
 .footer-items span{
 color:#ffffff;
 }
-
-#parent_company{
-    position: absolute;
-    right:0;
-    background: url(parent_logo.jpeg);
-    background-position: center;
+#copyRight{
+   Width:100%;
+   height: auto;
+   font-size: 1rem;
+   display: flex;
+   position: relative;
+   justify-content: center;
+   background: #023e7d;
+   align-items: flex-end;
+   font-family: 'Readex Pro';
 }
+
 
 @media(max-width:430px){
     .footer-items{
@@ -1510,5 +1554,9 @@ color:#ffffff;
         top:3rem;
         left:1rem;
     }
-
+    
+    #copyRight{
+        text-align: center;
+        font-size: 13px;
+    }
 }
