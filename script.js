@@ -49,7 +49,7 @@ let slidescreen=document.getElementById("slidescreen")
 let cancel=document.getElementById("cancel-img");
 menu.addEventListener('touchstart',()=>{
    cancel.style=`border:none`;
-     slidescreen.style=`right:.2rem;z-index:4;transition-duration:0.5s`;
+     slidescreen.style=`right:.3rem;z-index:4;transition-duration:0.5s`;
 })
 
 cancel.addEventListener('touchstart',()=>{
